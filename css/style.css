@@ -24,6 +24,7 @@ ul {
    margin: 0;
 }
 
+
 body{
    color: #1D2F38;
 }
@@ -38,6 +39,7 @@ body{
 .container {
    max-width: 1150px;
    margin: 0 auto;
+   padding: 0 15px;
 }
 
 .menu {
@@ -468,4 +470,143 @@ margin-bottom: 7px;
    gap: 10px;
 }
 
+.logo-a{
+   display: none;
+}
 
+.burger-menu{
+   display: none;
+   width: 30px;
+   height: 30px;
+   background-color: #17A550;
+   border:none;
+   border-radius: 5px;
+   position: relative;
+   
+}
+
+.burger-menu span{
+   position: absolute;
+   width: 20px;
+   height: 2px;
+   background-color: #1D2F38;
+   left: 5px;
+   top: 18px;
+   transition: transform .3s, opacity .3s, background-color .3s;
+}
+
+.burger-menu span:nth-child(1){
+   transform: translateY(-10px);
+}
+
+.burger-menu span:nth-child(2){
+   transform: translateY(-5px);
+}
+
+.header.open .burger-menu{
+   background-color: #768F9C;
+}
+
+.header.open .burger-menu span{
+   top: 15px;
+}
+.header.open .burger-menu span:nth-child(3){
+   transform: translateY(0) rotate(45deg);
+}
+.header.open .burger-menu span:nth-child(1){
+   transform: translateY(0) rotate(-45deg);
+}
+.header.open .burger-menu span:nth-child(2){
+   opacity: 0;
+}
+
+.menu__BTN{
+   display: none;
+}
+
+
+
+@media (max-width:768px){
+   .head-img{
+      display: none;
+   }
+   .card{
+      display: none;
+   }
+   .pdroduct-content{
+      flex-direction: column;
+      text-align: center;
+   }
+   .img-form{
+      display: none;
+   }
+   
+
+   .cards-item{
+      align-items: center;
+   }
+
+   .container-footer{
+      flex-direction: column;
+      justify-content: center;
+      margin: 0 auto;
+      align-items: center;
+   }
+   .menu__btn{
+      display: none;
+   }
+
+   .menu__list{
+      position: absolute;
+      top: -500px;
+      width: 350px;
+      background-color: rgb(163, 190, 190);
+      padding: 140px 20px 20px 20px;
+      transition: transform .5s;
+      display: block;
+   } 
+   .menu__BTN{
+      display: flex;
+      align-items: center;
+   }
+
+   .burger-menu{
+      display: flex;
+   }
+
+   .menu__link-img{
+      z-index: 10;
+   }
+   
+
+   .IT{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   .header.open .menu__list{
+      transform: translateY(100%);
+   }
+   
+}
+@media (max-width:480px){
+   .container-hr{
+      flex-direction: column;
+   }
+
+   .input{
+      width: 370px;
+   }
+   .about-text{
+      display: none;
+   }
+   .about-container{
+      justify-content: space-around;
+   }
+
+   
+   
+
+
+}
