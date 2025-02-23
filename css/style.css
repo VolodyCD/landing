@@ -596,7 +596,7 @@ margin-bottom: 7px;
    }
 
    .input{
-      width: 370px;
+      width: 300px;
    }
    .about-text{
       display: none;
@@ -604,6 +604,12 @@ margin-bottom: 7px;
    .about-container{
       justify-content: space-around;
    }
+
+   .input-footer{
+      width: 250px;
+
+   }
+
 
    
    
